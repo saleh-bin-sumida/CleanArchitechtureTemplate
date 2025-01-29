@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Projects\AddContributorToItem\**" />
+    <EmbeddedResource Remove="Projects\AddContributorToItem\**" />
+    <None Remove="Projects\AddContributorToItem\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
+    <PackageReference Include="NimblePros.SharedKernel" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NimblePros.SampleToDo.Core\NimblePros.SampleToDo.Core.csproj" />
+  </ItemGroup>
+
+</Project>
